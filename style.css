@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url("assets/Images/bg.jpg");
+  background-position: center center;
+  background-size: max(1200px, 100vw);
+  background-repeat: no-repeat;
+  height: 685px;
+  position: relative;
+  opacity: 0.85;
+}
+
+.main .box {
+  height: 685px;
+  width: 100%;
+  opacity: 0.69;
+  position: absolute;
+  top: 0;
+  background-color: black;
+  z-index: -1;
+}
+
+nav {
+  max-width: 80vw;
+  justify-content: space-between;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+nav img {
+  color: red;
+  width: 170px;
+  position: relative;
+  z-index: 10;
+}
+
+nav button {
+  position: relative;
+  z-index: 10;
+}
+
+
+.navbar {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* UL styling */
+.navbar .nav-links {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+/* LI spacing */
+.navbar .nav-links li {
+  margin-left: 45px;
+  position: relative;
+}
+
+/* Language dropdown */
+.navbar .nav-links li:first-child select {
+  padding: 10px 30px;
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+  border: 2px solid white;
+  cursor: pointer;
+  appearance: none; /* Remove default arrow */
+  -webkit-appearance: none; /* Remove default arrow in Safari */
+  -moz-appearance: none; /* Remove default arrow in Firefox */
+  width: 150px; /* Set a fixed width */
+}
+
+/* Add custom arrow */
+.navbar .nav-links li:first-child select {
+  background-image: linear-gradient(45deg, transparent 100%, white 50%), linear-gradient(135deg, white 50%, transparent 50%);
+  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+}
+
+/* Options inside dropdown */
+.navbar .nav-links li:first-child select option {
+  background-color: #333;
+  color: white;
+}
+
+/* Add this to style the select element when it's focused */
+.navbar .nav-links li:first-child select:focus {
+  outline: none;
+  border-color: white;
+}
+
+
+/* Sign in button */
+.navbar .nav-links li:last-child button {
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hero {
+  font-family: 'Martel Sans', sans-serif;
+  height: calc(100% - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 10px;
+  padding: 0 10px;
+}
+
+.hero> h1 {
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.hero> h3 {
+    font-size: 20px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    margin-bottom: 15px;
+
+}
+
+.hero> p {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+
+.separation {
+  height: 7px;
+  background-color: rgb(46, 44, 44);
+  position: relative;
+  z-index: 20;
+}
+
+.btn {
+  padding: 3px 8px;
+  font-weight: 400;
+  color: white;
+  background-color: rgba(248, 243, 243, 0.021);
+  border-radius: 4px;
+  border: 1px solid white;
+  cursor: pointer;
+
+}
+
+.btn-red {
+  background-color: red;
+  color: white;
+  padding: 3px 24px;
+  font-size: 20px;
+  border-radius: 4px;
+  font-weight: 400;
+}
+
+.btn-red-sm {
+  background-color: red;
+  color: white;
+}
+
+
+
+
+.main input {
+  padding: 7px 101px 8px 14px;
+  color: white;
+  font-size: 12px;
+  border-radius: 4px;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  max-width: 70vw;
+  margin: auto;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.secImg {
+  position: relative;
+}
+
+.secImg img {
+  width: 555px;
+  position: relative;
+  z-index: 10;
+}
+
+.secImg video {
+  position: absolute;
+  top: 51px;
+  right: 0;
+  width: 555px;
+}
+
+section.first>div {
+  display: flex;
+  flex-direction: column;
+  padding: 34px 0;
+}
+
+section.first>div :nth-child(1) {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+
+section.first>div :nth-child(2) {
+  font-size: 24px;
+
+}
+
+
+.faq h2 {
+  text-align: center;
+  font-size: 48px;
+}
+
+.faq {
+  background: black;
+  color: white;
+  padding: 34px;
+}
+
+.faqbox:hover {
+  background-color: #414141;
+  color: white;
+}
+
+.faqbox svg {
+  filter: invert(1);
+}
+
+.faqbox {
+  transition: all 1s ease-out;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #2d2d2d;
+  padding: 24px;
+  max-width: 60vw;
+  margin: 34px auto;
+  cursor: pointer;
+}
+
+footer {
+  color: white;
+  max-width: 60vw;
+  margin: auto;
+  padding: 60px;
+}
+
+footer .questions {
+  padding: 34px 0;
+}
+
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+  nav {
+    max-width: 90vw;
+  }
+
+  .first {
+    flex-wrap: wrap;
+  }
+
+  .secImg img {
+    width: 305px;
+  }
+
+  .secImg video {
+    width: 305px;
+  }
+
+  .hero> :nth-child(1) {
+    font-size: 32px;
+  }
+
+  .hero> :nth-child(2) {
+    font-size: 18px;
+  }
+
+  .hero> :nth-child(3) {
+    font-size: 18px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .faq h2 {
+    text-align: center;
+    font-size: 32px;
+  }
+
+  footer {
+    max-width: 90vw;
+    padding: 75px 0;
+  }
+
+  .footer-item {
+    align-items: center;
+  }
+
+
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+}
+
+
+.footer a {
+  font-size: 14px;
+  color: white;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
